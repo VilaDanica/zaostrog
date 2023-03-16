@@ -13,64 +13,55 @@ body {
   color: #eee;
 }
 
-.nav-main {
-  min-height: 4rem;
-  background-color: #eee;
+.page {
+  display: flex;
+}
+
+.nav {
+  min-height: 100vh;
+  width: 20%;
+  background-color: rgb(242, 244, 250);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.nav-main__ul {
+.nav__ul {
+  min-height: 12rem;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
 }
 
-.nav-main__li {
+.nav__li {
   margin: 0 1rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 100;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-.nav-main__a {
+.nav__a {
   color: black;
   margin-bottom: 1px solid black;
+  text-decoration: none;
 }
 
-.nav-main__a:hover {
+.nav__a:hover {
   opacity: .5;
 }
 
-.intro {
-  display: flex;
-  min-height: 50vh;
+.main {
+  width: 80%;
+  min-height: 100vh;
+  background-size: cover;
 }
 
-.intro__text {
-  flex: 50%;
-  color: black;
-  flex-grow: 1;
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
+.img {
+  height: 100%;
 }
 
-.intro__title {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-.intro__imgs {
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro__img {
-  max-height: 80%;
-  max-width: 100%;
+.index-carousel {
+  height: 100vh;
 }
