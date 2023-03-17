@@ -38,6 +38,7 @@ body {
 
 .page-layout__main {
   margin-left: 20%;
+  min-height: 100vh;
 }
 
 
@@ -89,11 +90,13 @@ body {
 /* IMAGES */
 
 .img-slider {
+  height: 100%;
   background-size: cover;
   background-image: url('./imgs/vila-danica/vila-danica-front.png');
 }
 
 .img {
+  height: 100%;
   width: 100%;
 }
 
@@ -123,11 +126,7 @@ body {
 }
 
 .apartment-overview__title {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 100;
-  letter-spacing: 2px;
-  color: rgb(72, 71, 71);
+  
 }
 
 .apartment-overview__details {
@@ -140,10 +139,7 @@ body {
 
 .apartment-overview__img {
   width: 40%;
-  border-radius: 5px;
-  overflow: hidden;
   transition: all .4s;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .apartment-overview__list {
@@ -164,11 +160,88 @@ body {
 }
 
 
+
+
+/* ABOUT */
+
+.about {
+  
+}
+
+.about__container {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.about__img {
+  width: 40%;
+}
+
+.about__text {
+  color: rgb(93, 92, 92);
+  width: 60%;
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 /* TYPOGRAPHY */
+
+.title-main {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgb(72, 71, 71);
+}
+
+
+
+
+/* GALLERY */
+
+.gallery {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery__img {
+  width: 23%;
+  height: 10rem;
+}
 
 
 /* UTILITIES */
 
 .p-4 {
   padding: 4rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.curved-corners {
+  border-radius: 5px;
+  overflow: hidden;
 }
