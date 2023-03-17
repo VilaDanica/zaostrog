@@ -7,34 +7,36 @@
   <link rel="stylesheet" href="main.css">
   <title>Vila Danica</title>
 </head>
-<body class="page">
+<body class="page-layout">
 
-  <nav class="nav">
-    <ul class="nav__ul">
-      <li class="nav__li">
-        <a class="nav__a" href="/">Home</a>
-      </li>
-      <li class="nav__li">
-        <a class="nav__a" href="/apartments">Apartments</a>
-      </li>
-      <li class="nav__li">
-        <a class="nav__a" href="/about">About</a>
-      </li>
-      <li class="nav__li">
-        <a class="nav__a" href="/contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <section class="page-layout__aside">
 
-  <main class="main">
+    <nav class="nav">
+      <ul class="nav__ul">
+        <li class="nav__li">
+          <a class="nav__a nav__a--active" href="/">Home</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="/apartments">Apartments</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="/about">About</a>
+        </li>
+        <li class="nav__li">
+          <a class="nav__a" href="/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <article class="index-carousel">
+  </section>
 
-      <img class="img" src="./imgs/vila-danica/vila-danica-front.png" alt="">
+  <section class="page-layout__main">
 
+    <article class="img-slider">
+      <img class="img" src="./imgs/vila-danica/vila-danica-front.png" alt="Vila Danica">
     </article>
 
-  </main>
+  </section>
   
 </body>
 </html>

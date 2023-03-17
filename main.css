@@ -1,3 +1,5 @@
+/* RESET */
+
 *,
 *::before,
 *::after {
@@ -13,14 +15,38 @@ body {
   color: #eee;
 }
 
-.page {
+
+
+
+/* PAGE LAYOUT */
+
+.page-layout {
   display: flex;
 }
 
-.nav {
+.page-layout > * {
   min-height: 100vh;
+}
+
+.page-layout__aside {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 20%;
   background-color: rgb(242, 244, 250);
+}
+
+.page-layout__main {
+  margin-left: 20%;
+}
+
+
+
+
+/* NAVIGATION */
+
+.nav {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,6 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
 }
 
@@ -44,24 +71,104 @@ body {
 
 .nav__a {
   color: black;
-  margin-bottom: 1px solid black;
   text-decoration: none;
+  transition: all .4s;
 }
 
-.nav__a:hover {
+.nav__a:hover, .nav__a--active {
   opacity: .5;
 }
 
-.main {
-  width: 80%;
-  min-height: 100vh;
+.nav__a--active {
+  text-decoration: underline;
+}
+
+
+
+
+/* IMAGES */
+
+.img-slider {
   background-size: cover;
+  background-image: url('./imgs/vila-danica/vila-danica-front.png');
 }
 
 .img {
-  height: 100%;
+  width: 100%;
 }
 
-.index-carousel {
-  height: 100vh;
+
+
+
+/* APPARTMENTS LIST */
+
+.apartments-list {
+  
+}
+
+.apartments-list__item {
+  margin-bottom: 6rem;
+}
+
+.apartments-list__link {
+  text-decoration: none;
+}
+
+
+
+/* APPARTMENT OVERVIEW */
+
+.apartment-overview {
+  
+}
+
+.apartment-overview__title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgb(72, 71, 71);
+}
+
+.apartment-overview__details {
+  margin-top: 1rem;
+  max-height: 35vh;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+}
+
+.apartment-overview__img {
+  width: 40%;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all .4s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.apartment-overview__list {
+  list-style: inside;
+  flex-grow: 1;
+  padding: 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: rgb(77, 75, 75);
+}
+
+.apartment-overview__list-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+
+/* TYPOGRAPHY */
+
+
+/* UTILITIES */
+
+.p-4 {
+  padding: 4rem;
 }
