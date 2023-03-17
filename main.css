@@ -212,7 +212,48 @@ body {
 .gallery__img {
   width: 23%;
   height: 10rem;
+  cursor: pointer;
 }
+
+.gallery-open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .9);
+  text-align: center;
+}
+
+.gallery-open__img {
+  max-width: 70rem;
+  max-height: 70vh;
+  margin-top: 5rem;
+}
+
+.gallery-open__btn {
+  min-width: 8rem;
+  min-height: 3rem;
+  border-radius: 3px;
+  border: 3px solid white;
+  outline: none;
+  background-color: black;
+  color: white;
+  margin: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .4s;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+.gallery-open__btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
 
 
 /* UTILITIES */
@@ -235,6 +276,10 @@ body {
 
 .mt-4 {
   margin-top: 4rem;
+}
+
+.d-none {
+  display: none;
 }
 
 .box-shadow {
