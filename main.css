@@ -38,7 +38,9 @@ body {
 
 .page-layout__main {
   margin-left: 20%;
+  flex-grow: 1;
   min-height: 100vh;
+  position: relative;
 }
 
 
@@ -150,14 +152,6 @@ body {
 
 
 /* APPARTMENT OVERVIEW */
-
-.apartment-overview {
-  
-}
-
-.apartment-overview__title {
-  
-}
 
 .apartment-overview__details {
   margin-top: 1rem;
@@ -318,10 +312,36 @@ body {
 
 
 
+
+/* BUTTON */
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid rgb(30, 28, 28);
+  transition: all .4s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+
+
+
 /* UTILITIES */
 
 .p-4 {
   padding: 4rem;
+}
+
+.m-1 {
+  margin: 1rem;
 }
 
 .mt-1 {
@@ -340,8 +360,20 @@ body {
   margin-top: 4rem;
 }
 
+.mr-2 {
+  margin-right: 2rem;
+}
+
 .d-none {
   display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-col {
+  flex-direction: column;
 }
 
 .box-shadow {
@@ -351,4 +383,12 @@ body {
 .curved-corners {
   border-radius: 5px;
   overflow: hidden;
+}
+
+.bg-light {
+  background-color: rgb(242, 244, 250);
+}
+
+.text-center {
+  text-align: center;
 }
