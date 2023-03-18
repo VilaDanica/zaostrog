@@ -181,7 +181,6 @@ body {
 
 
 
-
 /* TABLE */
 .table {
   font-family: arial, sans-serif;
@@ -277,6 +276,15 @@ body {
   color: black;
 }
 
+
+
+
+.fineprint {
+  color: rgb(71, 70, 70);
+  display: block;
+  font-size: .8rem;
+  padding: 1rem 0 0 0;
+}
 
 
 
