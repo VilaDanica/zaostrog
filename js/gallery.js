@@ -15,7 +15,7 @@ class Gallery {
 
   init() { 
     this.imgs.forEach( (img, indx) => {
-      img.addEventListener('click', () => {
+      img.addEventListener( 'click', () => {
         this.changeImg(indx);
         this.openGallery();
       } );
@@ -43,7 +43,7 @@ class Gallery {
   }
 
   handleArrowKeys(e) {
-    if (!this.openImgIndx) return;
+    if (!this.openImgIndx && this.openImgIndx !== 0) return;
     if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
     const indx = this.getNewIndx(e.key === 'ArrowRight' ? 'next' : 'previous');
     this.changeImg(indx);
@@ -51,10 +51,10 @@ class Gallery {
 
   getNewIndx(action) {
     const { openImgIndx, imgs } = this;
-    const lastImg = imgs.length - 1;
+    const lastImgIndx = imgs.length - 1;
     return action === 'next' ?
-      (openImgIndx === lastImg ? 0 : openImgIndx + 1) :
-      (openImgIndx === 0 ? lastImg : openImgIndx - 1);
+      (openImgIndx === lastImgIndx ? 0 : openImgIndx + 1) :
+      (openImgIndx === 0 ? lastImgIndx : openImgIndx - 1);
   }
   
   changeImg(indx) {

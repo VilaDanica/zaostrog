@@ -164,8 +164,9 @@ body {
 
 /* ABOUT */
 
-.about {
-  
+.about__text {
+  width: 60%;
+  padding: .5rem 2rem;
 }
 
 .about__container {
@@ -178,15 +179,38 @@ body {
   width: 40%;
 }
 
-.about__text {
-  color: rgb(93, 92, 92);
-  width: 60%;
-  padding: .5rem 2rem;
+
+
+
+/* TABLE */
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
   font-size: 1rem;
   line-height: 1.7;
 }
 
+.table td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: .5rem 1rem;
+}
+
+.table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+
+
 /* TYPOGRAPHY */
+
+.text {
+  color: rgb(93, 92, 92);
+  font-size: 1rem;
+  line-height: 1.7;
+}
 
 .title-main {
   text-transform: uppercase;
