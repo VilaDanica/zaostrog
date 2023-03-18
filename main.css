@@ -73,11 +73,11 @@ body {
 .nav__a {
   color: black;
   text-decoration: none;
-  transition: all .4s;
+  transition: opacity .4s;
 }
 
-.nav__a:hover, .nav__a--active {
-  opacity: .5;
+.nav__a:hover {
+  opacity: .4;
 }
 
 .nav__a--active {
