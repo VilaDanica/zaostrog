@@ -146,10 +146,13 @@ body {
   position: relative;
 }
 
-.apartments-list__cta {
+.apartment-list__btns {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.apartments-list__cta {
   padding: .2rem .8rem;
 }
 
@@ -347,7 +350,7 @@ body {
 
 .btn--cta:hover {
   border: 4px solid #11294d;
-  background-color: #eee;
+  background-color: transparent;
   color: #11294d;
 }
 
@@ -362,6 +365,10 @@ body {
 
 .p-4 {
   padding: 4rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
 }
 
 .px-2 {
@@ -426,6 +433,18 @@ body {
 
 .d-flex-col {
   flex-direction: column;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+.pos-top {
+  top: 0;
+}
+
+.pos-right {
+  right: 0;
 }
 
 .box-shadow {
