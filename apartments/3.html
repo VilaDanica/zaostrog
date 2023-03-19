@@ -28,7 +28,7 @@
     </nav>
   </section>
 
-  <section class="page-layout__main p-4">
+  <section class="page-layout__main">
 
     <a 
       class="text mr-2 pt-1 pos-absolute pos-top pos-right" 
@@ -190,11 +190,15 @@
 
 
   <section class="gallery-open d-none">
-    <img class="gallery-open__img curved-corners box-shadow" src="" alt="Vila Danica">
-    <footer>
-      <button class="gallery-open__btn gallery-open__btn--previous"> &#8592; </button>
-      <button class="gallery-open__btn gallery-open__btn--next"> &#8594; </button>
-    </footer>
+    <article class="gallery-open__content">
+      <div class="gallery-open__img-box">
+        <img class="gallery-open__img curved-corners box-shadow" src="" alt="Vila Danica">
+      </div> 
+      <footer class="gallery-open__btns">
+        <button class="gallery-open__btn gallery-open__btn--previous"> &#8592; </button>
+        <button class="gallery-open__btn gallery-open__btn--next"> &#8594; </button>
+      </footer>
+    </article>
   </section>
 
 
