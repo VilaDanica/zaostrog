@@ -125,50 +125,12 @@ body {
 
 
 
-
-/* IMAGES */
-
-.img-slider {
-  height: 100vh;
-  width: 100%;
+.bg-img {
   background-image: url('./imgs/vila-danica/1.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  /*
-  transition: 5s;
-  animation-name: slider;
-  animation-direction: alternate-reverse;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  */
 }
 
-/*
-@keyframes slider {
-  0% {
-    background-image: url('./imgs/vila-danica/3.png');
-  }
-  20% {
-    background-image: url('./imgs/vila-danica/2.png');
-  }
-  40% {
-    background-image: url('./imgs/vila-danica/5.png');
-  }
-  60% {
-    background-image: url('./imgs/vila-danica/8.png');
-  }
-  80% {
-    background-image: url('./imgs/vila-danica/7.png');
-  }
-  100% {
-    background-image: url('./imgs/vila-danica/8.png');
-  }
-}
-*/
 
 
 
